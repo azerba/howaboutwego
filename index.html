@@ -1,0 +1,113 @@
+<html>
+   <head>
+      <title>Have You Tried ...?</title>
+      <link rel='stylesheet' href='css/reset.css'>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/form.css">
+      <link rel="stylesheet" href="css/modal.css">
+
+      <link href='https://fonts.googleapis.com/css?family=Arimo:400,700|Ek+Mukta|Open+Sans|Oxygen' rel='stylesheet' type='text/css'>
+   </head>
+<body>
+
+<!-- start of categories -->
+
+<div class="topic-wrapper">
+   <div class="banner">
+      <img src="images/howaboutwetrylogo.png" alt="how about we try logo">
+      <p>An app that lists places to go and eat in Manhattan suggested by your friends.</p>
+   </div>
+   <div class="btn-add-restaurant">Add Restaurant</div>
+   
+   <div class="box" data-category="NY Fare">
+      <img src="images/nyfare.jpg" class="box-nyfare">
+      <div class="topic-nyfare">
+         <h2 class="topicname-style">NY Fare</h2>
+      </div>
+   </div>
+
+   <div class="box" data-category="Casual">
+      <img src="images/casual.jpg" class="box-casual">
+      <div class="topic-casual">
+         <h2 class="topicname-style">Casual</h2>
+      </div>
+   </div>
+   
+   <div class="box" data-category="Cheap Eats">
+      <img src="images/cheapeats.jpg" class="box-cheapeats">
+      <div class="topic-cheapeats">
+         <h2 class="topicname-style">Cheap Eats</h2>
+      </div>
+   </div>
+   
+   <div class="box" data-category="Date Food">
+      <img src="images/datefood.jpg" class="box-datefood">
+      <div class="topic-datefood">
+         <h2 class="topicname-style">Date Food</h2>
+      </div>
+   </div>
+   
+   <div class="box" data-category="Ethnic">
+      <img src="images/ethnic.jpg" class="box-ethnic">
+      <div class="topic-ethnic">
+         <h2 class="topicname-style">Ethnic</h2>
+      </div>
+   </div>
+   
+   <div class="box" data-category="Coffee and Desserts">
+      <img src="images/coffee.jpg" class="box-coffee">
+      <div class="topic-coffee">
+         <h2 class="topicname-style">Coffee and Desserts</h2>
+      </div>
+   </div>
+
+</div>
+
+<!-- end of categories -->
+
+
+<!-- start of restaurant suggestion list -->
+
+<div class="restaurant-suggest-wrapper">
+   <div class="restaurant-suggest-list">
+      <div class="return">X Close</div>
+      <ul class="list">
+      </ul>
+   </div>
+</div>
+<!-- end of restaurant suggestion list -->
+
+<!-- start of form for adding restaurants -->
+
+        
+<div class="form-wrapper">
+   <div class="return-topics">X Close</div>
+   <form class="add-restaurant">
+   Restaurant name:<br>
+   <input type="text" name="restaurant" class="restname"><br>
+   Location:<br>
+   <input type="text" name="location" class="location"><br>
+   Description:<br>
+   <textarea name="description" class="description" rows="10" cols="50" placeholder="write something here"></textarea><br>
+   Your Name:<br>
+   <input type="text" name="author" class="author"><br>
+    Category:<br>
+    <input class ="category" type="checkbox" name="cat" value="NY Fare">N.Y. Fare<br>
+    <input class ="category" type="checkbox" name="cat" value="Casual">Casual <br>
+    <input class ="category" type="checkbox" name="cat" value="Cheap Eats">Cheap Eats<br>
+    <input class ="category" type="checkbox" name="cat" value="Date Food">Date Food<br>
+    <input class ="category" type="checkbox" name="cat" value="Ethnic">Ethnic<br>
+    <input class ="category" type="checkbox" name="cat" value="Coffee and Desserts">Coffee and Desserts<br>
+   <input type="submit" value="submit" class="submit">
+   </form>
+</div>
+
+<!-- end of form for adding restaurants -->
+
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/form.js"></script>
+   </body>
+</html>
